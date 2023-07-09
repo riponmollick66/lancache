@@ -6,7 +6,7 @@ $TTL 60 ; default TTL
                 600      ; expire (10 mins)
                 600      ; minimum (10 mins)
                 )
-        NS      dns.ripon.com.
+	IN NS	dns.ripon.com.
 
 windowsupdate IN A 192.168.100.246
 ubuntu IN A 192.168.100.246
