@@ -4,6 +4,7 @@ mkdir -p /var/cache/bind /var/log/named && chown bind:bind /var/cache/bind /var/
 cp -r /opt/lancache-main/bind/* /etc/bind/	;
 chown -R bind:bind /etc/bind/	;
 mkdir -m 755 -p /harddisk/cache /harddisk/logs	;
+mkdir /etc/nginx/stream-enabled  ;
 rm -rf /etc/nginx/sites-enabled/*
 cp -r /opt/lancache-main/nginx/* /etc/nginx/	;
 ln -s /etc/nginx/sites-available/10_cache.conf /etc/nginx/sites-enabled/10_generic.conf	;
