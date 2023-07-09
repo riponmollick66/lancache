@@ -38,8 +38,3 @@ zone "adaway" IN {
 type master;
 file "/etc/bind/adblock/adaway.zone";
 };
-
-zone "youtube_adblock" IN {
-type master;
-file "/etc/bind/adblock/youtube_adblock.zone";
-};
