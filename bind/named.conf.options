@@ -18,7 +18,6 @@ options {
 		zone "gamecache";
 		zone "oscache";
 		zone "adaway";
-	#	zone "youtube_adblock";
 		};
 		rrset-order { order cyclic; };
 		
