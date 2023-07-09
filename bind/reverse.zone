@@ -2,20 +2,12 @@
 ; BIND data file for local loopback interface
 ;
 $TTL	604800
-@	IN	SOA	dns.av.com. root.dns.av.com. (
+@	IN	SOA	dns.ripon.com. root.dns.ripon.com. (
 			      2		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			 604800 )	; Negative Cache TTL
 ;
-	IN	NS	dns.av.com.
-246	IN	PTR	dns.av.com.
-244	IN	PTR	server.av.com.
-245	IN	PTR	monitoring.av.com.
-248	IN	PTR	torrent.av.com.
-250	IN	PTR	olt.av.com.
-251	IN	PTR	rangpurolt.av.com.
-252	IN	PTR	shalua.av.com.
-253	IN	PTR	shahapur.av.com.
-254	IN	PTR	switch.av.com.
+	IN	NS	dns.ripon.com.
+3	IN	PTR	dns.ripon.com.
