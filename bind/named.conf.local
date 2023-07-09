@@ -1,0 +1,45 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "ripon.com" IN {
+type master;
+file "/etc/bind/forward.zone";
+};
+
+zone "100.168.192.in-addr.arpa" IN {
+type master;
+file "/etc/bind/reverse.zone";
+allow-query { any; };
+};
+
+zone "cache.ripon.com" IN {
+type master;
+file "/etc/bind/cache/cache.zone";
+};
+
+zone "oscache" IN {
+type master;
+file "/etc/bind/cache/os_cache.zone";
+allow-query { none; };
+};
+
+zone "gamecache" IN {
+type master;
+file "/etc/bind/cache/game_cache.zone";
+allow-query { none; };
+};
+
+zone "adaway" IN {
+type master;
+file "/etc/bind/adblock/adaway.zone";
+};
+
+zone "youtube_adblock" IN {
+type master;
+file "/etc/bind/adblock/youtube_adblock.zone";
+};
