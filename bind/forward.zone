@@ -2,21 +2,12 @@
 ; BIND data file for local loopback interface
 ;
 $TTL	604800
-@	IN	SOA	dns.av.com. root.dns.av.com. (
+@	IN	SOA	dns.ripon.com. root.dns.ripon.com. (
 			      2		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			 604800 )	; Negative Cache TTL
 ;
-	IN	NS	dns.av.com.
+	IN	NS	dns.ripon.com.
 dns	IN	A	192.168.100.246
-server	IN	A	192.168.100.244
-monitoring IN	A	192.168.100.245
-torrent IN	A	192.168.100.248
-olt	IN	A	192.168.100.250
-rangpurolt IN	A	192.168.100.251
-shaluaolt IN	A	192.168.100.252
-shahapurolt IN	A	192.168.100.253
-switch	IN	A	192.168.100.254
-rpc	IN	A	172.20.21.10
