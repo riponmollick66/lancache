@@ -19,18 +19,12 @@ allow-query { any; };
 
 zone "cache.ripon.com" IN {
 type master;
-file "/etc/bind/cache/cache.zone";
+file "/etc/bind/cache/cache.ripon.com.db";
 };
 
-zone "oscache" IN {
+zone "rpz" {
 type master;
-file "/etc/bind/cache/os_cache.zone";
-allow-query { none; };
-};
-
-zone "gamecache" IN {
-type master;
-file "/etc/bind/cache/game_cache.zone";
+file "/etc/bind/cache/rpz.db";
 allow-query { none; };
 };
 
