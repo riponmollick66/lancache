@@ -1,0 +1,45 @@
+$TTL 60
+@            IN    SOA  localhost. root.localhost.  (
+                          2   ; serial 
+                          3H  ; refresh 
+                          1H  ; retry 
+                          1W  ; expiry 
+                          1H) ; minimum 
+                  IN    NS    localhost.
+
+;## epicgames
+cdn1.epicgames.com IN CNAME epicgames.cache.ripon.com.;
+cdn.unrealengine.com IN CNAME epicgames.cache.ripon.com.;
+cdn1.unrealengine.com IN CNAME epicgames.cache.ripon.com.;
+cdn2.unrealengine.com IN CNAME epicgames.cache.ripon.com.;
+cdn3.unrealengine.com IN CNAME epicgames.cache.ripon.com.;
+download.epicgames.com IN CNAME epicgames.cache.ripon.com.;
+download2.epicgames.com IN CNAME epicgames.cache.ripon.com.;
+download3.epicgames.com IN CNAME epicgames.cache.ripon.com.;
+download4.epicgames.com IN CNAME epicgames.cache.ripon.com.;
+epicgames-download1.akamaized.net IN CNAME epicgames.cache.ripon.com.;
+fastly-download.epicgames.com IN CNAME epicgames.cache.ripon.com.;
+
+;## steam
+lancache.steamcontent.com IN CNAME steam.cache.ripon.com.;
+
+;## rockstar
+patches.rockstargames.com IN CNAME rockstar.cache.ripon.com.;
+
+;## uplay
+*.cdn.ubi.com IN CNAME uplay.cache.ripon.com.;
+
+;## riot
+l3cdn.riotgames.com IN CNAME riot.cache.ripon.com.;
+worldwide.l3cdn.riotgames.com IN CNAME riot.cache.ripon.com.;
+riotgamespatcher-a.akamaihd.net IN CNAME riot.cache.ripon.com.;
+riotgamespatcher-a.akamaihd.net.edgesuite.net IN CNAME riot.cache.ripon.com.;
+*.dyn.riotcdn.net IN CNAME riot.cache.ripon.com.;
+
+;## origin
+origin-a.akamaihd.net IN CNAME origin.cache.ripon.com.;
+lvlt.cdn.ea.com IN CNAME origin.cache.ripon.com.;
+cdn-patch.swtor.com IN CNAME origin.cache.ripon.com.;
+
+;## pubg
+k.gjacky.com IN CNAME pubg.cache.ripon.com.
