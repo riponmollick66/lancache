@@ -7,8 +7,8 @@ options {
         allow-query-cache { any; };
         listen-on { any; };
         listen-on-v6 { any; };
-	max-cache-ttl 3600;
-	max-ncache-ttl 3600;
+	max-cache-ttl 0;
+	max-ncache-ttl 0;
 	forward only;
 	querylog no;
 	
