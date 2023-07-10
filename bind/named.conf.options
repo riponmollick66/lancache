@@ -15,7 +15,8 @@ options {
 	# Permit RFC1918 PTR lookups to be recursed upstream
 	empty-zones-enable no;
 	response-policy {
-		zone "rpz";
+		zone "oscache";
+		zone "gamecache";
 		zone "adaway";
 	};
 
