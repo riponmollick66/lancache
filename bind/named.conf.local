@@ -8,12 +8,12 @@
 
 zone "ripon.com" IN {
 type master;
-file "/etc/bind/forward.zone";
+file "/etc/bind/forward.db";
 };
 
 zone "100.168.192.in-addr.arpa" IN {
 type master;
-file "/etc/bind/reverse.zone";
+file "/etc/bind/reverse.db";
 allow-query { any; };
 };
 
