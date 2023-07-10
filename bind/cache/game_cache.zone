@@ -1,12 +1,11 @@
-$TTL 60 ; default TTL
-@       SOA     dns.ripon.com. root.dns.ripon.com. (
-		2022112601 ; serial
-                604800     ; refresh (1 week)
-                600      ; retry (10 mins)
-                600      ; expire (10 mins)
-                600      ; minimum (10 mins)
-                )
-        NS      dns.ripon.com.
+$TTL 60
+@            IN    SOA  localhost. root.localhost.  (
+                          2   ; serial 
+                          3H  ; refresh 
+                          1H  ; retry 
+                          1W  ; expiry 
+                          1H) ; minimum 
+                  IN    NS    localhost.
 
 ;## pubg
 k.gjacky.com IN CNAME pubg.cache.ripon.com.
