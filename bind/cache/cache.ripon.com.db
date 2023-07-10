@@ -1,0 +1,14 @@
+$ORIGIN cache.ripon.com.
+$TTL    600
+@       IN  SOA localhost. dns.lancache.net. (
+             1688781599
+             604800
+             600
+             600
+             600 )
+@       IN  NS  localhost.
+
+windowsupdate IN A 192.168.100.246
+ubuntu IN A 192.168.100.246
+proxmox IN A 192.168.100.246
+pubg IN A 192.168.100.246
