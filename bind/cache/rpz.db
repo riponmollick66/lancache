@@ -1,0 +1,31 @@
+$TTL 60
+@            IN    SOA  localhost. root.localhost.  (
+                          2   ; serial 
+                          3H  ; refresh 
+                          1H  ; retry 
+                          1W  ; expiry 
+                          1H) ; minimum 
+                  IN    NS    localhost.
+
+;## windowsupdate
+download.windowsupdate.com IN CNAME windowsupdate.cache.ripon.com.
+www.download.windowsupdate.com IN CNAME windowsupdate.cache.ripon.com.
+ctldl.windowsupdate.com IN CNAME windowsupdate.cache.ripon.com.
+emdl.ws.microsoft.com IN CNAME windowsupdate.cache.ripon.com.
+au.download.windowsupdate.com IN CNAME windowsupdate.cache.ripon.com.
+11.au.download.windowsupdate.com IN CNAME windowsupdate.cache.ripon.com.
+dl.delivery.mp.microsoft.com IN CNAME windowsupdate.cache.ripon.com.
+tlu.dl.delivery.mp.microsoft.com IN CNAME windowsupdate.cache.ripon.com.
+adl.windows.com IN CNAME windowsupdate.cache.ripon.com.
+
+;## ubuntu
+archive.ubuntu.com IN CNAME ubuntu.cache.ripon.com.
+*.archive.ubuntu.com IN CNAME ubuntu.cache.ripon.com.
+
+;## proxmox
+download.cdn.proxmox.com IN CNAME proxmox.cache.ripon.com.
+download.proxmox.com IN CNAME proxmox.cache.ripon.com.
+in.as.cdn.proxmox.com IN CNAME proxmox.cache.ripon.com.
+
+;## pubg
+k.gjacky.com IN CNAME pubg.cache.ripon.com.
