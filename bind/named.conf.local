@@ -22,9 +22,15 @@ type master;
 file "/etc/bind/cache/cache.ripon.com.db";
 };
 
-zone "rpz" {
+zone "oscache" {
 type master;
-file "/etc/bind/cache/rpz.db";
+file "/etc/bind/cache/os_cache.db";
+allow-query { none; };
+};
+
+zone "gamecache" {
+type master;
+file "/etc/bind/cache/game_cache.db";
 allow-query { none; };
 };
 
