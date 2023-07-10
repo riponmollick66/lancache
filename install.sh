@@ -7,8 +7,8 @@ mkdir -m 755 -p /harddisk/cache /harddisk/logs	;
 mkdir /etc/nginx/stream-enabled  ;
 rm -rf /etc/nginx/sites-enabled/*
 cp -r /opt/lancache-main/nginx/* /etc/nginx/	;
-ln -s /etc/nginx/sites-available/10_cache.conf /etc/nginx/sites-enabled/10_generic.conf	;
-ln -s /etc/nginx/sites-available/20_upstream.conf /etc/nginx/sites-enabled/20_upstream.conf	;
+ln -s /etc/nginx/sites-available/10_cache.conf /etc/nginx/sites-enabled/	;
+ln -s /etc/nginx/sites-available/20_upstream.conf /etc/nginx/sites-enabled/	;
 ln -s /etc/nginx/stream-available/10_sni.conf /etc/nginx/stream-enabled/
 
 # Start services at boot
