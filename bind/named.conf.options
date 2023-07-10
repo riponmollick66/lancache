@@ -7,8 +7,8 @@ options {
         allow-query-cache { any; };
         listen-on { any; };
         listen-on-v6 { any; };
-	max-cache-ttl 0;
-	max-ncache-ttl 0;
+	max-cache-ttl 3600;
+	max-ncache-ttl 3600;
 	forward only;
 	querylog no;
 	
@@ -24,6 +24,7 @@ options {
         #ENABLE_UPSTREAM_DNS#
 	forwarders {
 		8.8.8.8;
+		1.1.1.1;
 	};
 };
 
