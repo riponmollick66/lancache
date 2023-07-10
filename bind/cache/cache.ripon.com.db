@@ -8,6 +8,16 @@ $TTL    600
              600 )
 @       IN  NS  localhost.
 
+;## Os
 wsus IN A 192.168.100.246
 ubuntu IN A 192.168.100.246
 proxmox IN A 192.168.100.246
+
+;## Games
+epicgames IN A 192.168.100.246;
+steam IN A 192.168.100.246;
+rockstar IN A 192.168.100.246;
+uplay IN A 192.168.100.246;
+riot IN A 192.168.100.246;
+origin IN A 192.168.100.246;
+pubg IN A 192.168.100.246;
