@@ -15,17 +15,15 @@ options {
 	# Permit RFC1918 PTR lookups to be recursed upstream
 	empty-zones-enable no;
 	response-policy {
-		zone "gamecache";
-		zone "oscache";
+		zone "rpz";
 		zone "adaway";
-		};
-		rrset-order { order cyclic; };
-		
+	};
+
+	rrset-order { order cyclic; };	
         #ENABLE_UPSTREAM_DNS#
-		forwarders {
+	forwarders {
 		8.8.8.8;
-		1.1.1.1;
-		};
+	};
 };
 
 logging {
