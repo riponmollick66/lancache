@@ -1,6 +1,6 @@
 $ORIGIN cache.ripon.com.
 $TTL    600
-@       IN  SOA localhost. dns.lancache.net. (
+@       IN  SOA dns.ripon.com. root.dns.ripon.com. (
              1688781599
              604800
              600
